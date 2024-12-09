@@ -1,6 +1,7 @@
 spring:
   application:
     name: Stock Service desde el repositorio github
+
   kafka:
     consumer:
       bootstrap-servers: localhost:9092

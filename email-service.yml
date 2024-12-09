@@ -1,6 +1,7 @@
 spring:
   application:
     name: Email Service desde el repositorio github
+
   kafka:
     consumer:
       bootstrap-servers: localhost:9092
@@ -9,7 +10,10 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
-        spring.json.trusted.packages: "*"
+        spring:
+          json:
+            trusted:
+              packages: "*"
     topic:
       name: order_topics
 
