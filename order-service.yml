@@ -1,13 +1,13 @@
 spring:
   application:
-    name:Order Service desde el repositorio github
+    name: Order Service desde el repositorio github
   kafka:
     producer:
-      bootstrap-servers:localhost:9092
-      key-serializer:org.apache.kafka.common.serialization.StringSerializer
-      value-serializer:org.springframework.kafka.support.serializer.JsonSerializer
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     topic:
-      name:order_topics
+      name: order_topics
 
 server:
-  port:8080
+  port: 8080
