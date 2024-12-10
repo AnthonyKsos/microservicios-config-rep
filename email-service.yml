@@ -18,4 +18,4 @@ spring:
       name: order_topics
 
 server:
-  port: 8082
+  port: 8083
